@@ -35,7 +35,6 @@ form.addEventListener('submit', (e) => {
         messagesContainer.appendChild(message3);
         message3.style.color = 'green';
     }
-    form.appendChild(messagesContainer);
     handleResponsiveLayout();
 });
 
