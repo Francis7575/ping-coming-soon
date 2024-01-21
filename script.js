@@ -28,12 +28,15 @@ form.addEventListener('submit', (e) => {
     if (input.value === "") {
         messagesContainer.appendChild(message2);
         message2.style.color = 'hsl(354, 100%, 66%)';
+        input.style.border = '1px solid hsl(354, 100%, 66%)';
     } else if (!isValidEmail(input.value)) {
         messagesContainer.appendChild(message);
         message.style.color = 'hsl(354, 100%, 66%)';
+        input.style.border = '1px solid hsl(354, 100%, 66%)';
     } else if (isValidEmail(input.value)) {
         messagesContainer.appendChild(message3);
         message3.style.color = 'green';
+        input.style.border = '1px solid green';
     }
     handleResponsiveLayout();
 });
